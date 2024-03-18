@@ -1,12 +1,14 @@
-
-def consoleOutput():
+def consoleOutput(text):
     """
     Function to output text to the console.
     """
-    pass
+    print(text)
 
-def fileOutput():
+
+def fileOutput(text):
     """
     Function to write to a file.
     """
-    pass
+    filePath = "data\output.txt"
+    with open(filePath, "w") as file:
+        file.write(text)
